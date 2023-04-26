@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Kaydırma : MonoBehaviour
 {
-    Vector2 fark=Vector2.zero;
+    Vector2 fark = Vector2.zero;
     
 
     private void OnMouseDown()
