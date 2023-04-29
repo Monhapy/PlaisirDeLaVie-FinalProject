@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Sahne1.unity
+    path: "Assets/Scenes/Ba\u015Flang\u0131\xE7.unity"
+    guid: 31a7eabacad4c244b967778b09a956ec
+  - enabled: 1
+    path: "Assets/Scenes/Uyan\u0131\u015F.unity"
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Sahne2.unity
+    path: "Assets/Scenes/Di\u015F.unity"
     guid: c35c992a2ea012647b10ffd825fc4f83
   - enabled: 1
-    path: Assets/Scenes/Deneme.unity
+    path: "Assets/Scenes/MerdivenMutfa\u011Fa.unity"
+    guid: 20e8fe9aa5c631f41809887e2205c20a
+  - enabled: 1
+    path: Assets/Scenes/Yemek.unity
     guid: c997eeba42ef0da4198b7101bc128920
   m_configObjects: {}
