@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Salata : MonoBehaviour
 {
@@ -26,5 +27,8 @@ public class Salata : MonoBehaviour
         background3.SetActive(false);
         boþsalata.SetActive(false);
         kruvasan.SetActive(false);
+        
+        SceneManager.LoadScene(5);
     }
+    
 }

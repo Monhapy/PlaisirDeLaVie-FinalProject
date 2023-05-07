@@ -11,10 +11,11 @@ public class Diş : MonoBehaviour
 
     //Renk değişkeni
     private Color dişRengi;
+    private bool butonEtkinleştirildi = false;
     private void OnTriggerEnter2D(Collider2D fırça)
     {
         //Fırçanın dişe temasını anlaması
-        if (fırça.CompareTag("Diş"))
+        if (fırça.CompareTag("Diş") && !butonEtkinleştirildi)
         {
             //Temas halinde renkteki B de değişiklik yapması
             dişRengi = diş.GetComponent<SpriteRenderer>().color;
@@ -24,7 +25,8 @@ public class Diş : MonoBehaviour
             //Dişler beyazlayınca butonun aktif olması
             if (dişRengi.b >= 0.98f)
             {
-                buton.SetActive(true);  
+                buton.SetActive(true);
+                butonEtkinleştirildi = true;
             }
             
         }
