@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: NumberBox
+    uniqueID: 1168137283
+    locked: 0
+  - name: Number
+    uniqueID: 3838412639
+    locked: 0
