@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackgroundAnim : MonoBehaviour
 {
-    public Animator animator_kuaför;
+    public Animator animator_kuaför,sahneGeçiþ;
     public Animator animator_saç1, animator_saç2;
-    public bool z1, z2;
+    public bool z1, z2,z3;
     private void Start()
     {
          z1= true;
          z2= false;
+         z3= false;
     }
 
     void Update()
@@ -26,11 +28,25 @@ public class BackgroundAnim : MonoBehaviour
         }
         else if(Input.GetMouseButtonDown(0) && z2 == true)
         {
-            animator_saç1.SetBool("Saç1", true); ;
+            animator_saç1.SetBool("Saç1", true) ;
             animator_saç2.SetBool("Saç2", true) ;
             z2= false;
+            z3= true;
 
         }
+        else if (Input.GetMouseButtonDown(0) && z3 == true)
+        {
+            sahneGeçiþ.SetBool("Sahne",true) ;
+            z3 = false;
+            StartCoroutine(DelayFonk());
+
+        }
+    }
+    IEnumerator DelayFonk()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(7);
+
     }
     
 }

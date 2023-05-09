@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class Butonlar : MonoBehaviour
 {
-    public Animator saç1_animator, saç2_animator;
+    public Animator saç1_animator, cam_animator;
     public void Saç1()
     {
-        //saç1_animator.SetBool("Alarm", true);
+        saç1_animator.SetBool("Alarm", true);
     }
     public void Saç1Deactive()
     {
-       // saç1_animator.SetBool("Alarm", false);
+       saç1_animator.SetBool("Alarm", false);
     }
     public void Saç2()
     {
-        //saç2_animator.SetBool("Geçme",true);
+        cam_animator.SetBool("Cam", true);
+        StartCoroutine(DelayScene());
+    }
+    IEnumerator DelayScene() 
+    {
+        yield return new WaitForSeconds(1.5f);
     }
 }

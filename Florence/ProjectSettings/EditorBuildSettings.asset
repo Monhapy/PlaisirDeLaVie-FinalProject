@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Kuaf\xF6r.unity"
     guid: 0971ca519630ee34f91734f6c15cd4d2
+  - enabled: 1
+    path: "Assets/Scenes/Kuaf\xF6rD\xF6n\xFC\u015F.unity"
+    guid: 3ad78ae4f44971f4e87b7f13602b8edc
   m_configObjects: {}

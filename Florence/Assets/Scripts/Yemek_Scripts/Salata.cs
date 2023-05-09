@@ -8,6 +8,7 @@ public class Salata : MonoBehaviour
 {
     public GameObject dolusalata, boþsalata, yarýdolusalata,kruvasan;
     public GameObject background1,background2, background3;
+    public Animator cameraAnim;
     public void DoluSalata()
     {
         background1.SetActive(false);
@@ -24,11 +25,21 @@ public class Salata : MonoBehaviour
     }
     public void BoþSalata()
     {
-        background3.SetActive(false);
+
         boþsalata.SetActive(false);
         kruvasan.SetActive(false);
-        
-        SceneManager.LoadScene(5);
+        StartCoroutine(Delay());
+        cameraAnim.SetBool("Kamera", true);
+        StartCoroutine(SahneGeçiþ());
     }
-    
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1.5f);
+    }
+    IEnumerator SahneGeçiþ()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(5);
+
+    }
 }
