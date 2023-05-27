@@ -32,4 +32,5 @@ public class Diş : MonoBehaviour
         }
         
     }
+    
 }

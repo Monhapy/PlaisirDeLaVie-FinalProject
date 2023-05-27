@@ -7,12 +7,13 @@ public class BackgroundAnim : MonoBehaviour
 {
     public Animator animator_kuaför,sahneGeçiþ;
     public Animator animator_saç1, animator_saç2;
-    public bool z1, z2,z3;
+    public bool z1, z2,z3,z4;
     private void Start()
     {
          z1= true;
          z2= false;
          z3= false;
+         z4= false;
     }
 
     void Update()
@@ -36,17 +37,23 @@ public class BackgroundAnim : MonoBehaviour
         }
         else if (Input.GetMouseButtonDown(0) && z3 == true)
         {
-            sahneGeçiþ.SetBool("Sahne",true) ;
+            
             z3 = false;
-            StartCoroutine(DelayFonk());
+            z4 =true;
 
         }
-    }
-    IEnumerator DelayFonk()
-    {
-        yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(7);
+        else if (Input.GetMouseButtonDown(0) && z4 == true)
+        {
+            sahneGeçiþ.SetBool("Sahne", true);
+            Invoke("SahneGeçiþ", 1.5f);
 
+
+        }
+
+    }
+    private void SahneGeçiþ()
+    {
+        SceneManager.LoadScene(7);
     }
     
 }

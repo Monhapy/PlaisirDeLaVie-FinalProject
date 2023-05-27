@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SahneManager : MonoBehaviour
+public class SahneYönetim_4 : MonoBehaviour
 {
-    public Animator kuaför,kuaför2;
-    public bool z1, z2;
+    [SerializeField] Animator kuaför,kuaför2;
+    [SerializeField] bool z1, z2;
 
 
     private void Awake()
@@ -33,7 +33,7 @@ public class SahneManager : MonoBehaviour
     }
     IEnumerator SahneDelay()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(6);
     }
 }

@@ -6,27 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/Ba\u015Flang\u0131\xE7.unity"
+    path: "Assets/Scenes/Ba\u015Flang\u0131\xE7_0.unity"
     guid: 31a7eabacad4c244b967778b09a956ec
   - enabled: 1
-    path: "Assets/Scenes/7Ya\u015F_Sahneler/Uyan\u0131\u015F.unity"
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Uyan\u0131\u015F_1.unity"
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: "Assets/Scenes/7Ya\u015F_Sahneler/Di\u015F.unity"
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Di\u015F_2.unity"
     guid: c35c992a2ea012647b10ffd825fc4f83
   - enabled: 1
-    path: "Assets/Scenes/7Ya\u015F_Sahneler/MerdivenMutfa\u011Fa.unity"
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/MerdivenMutfa\u011Fa_3.unity"
     guid: 20e8fe9aa5c631f41809887e2205c20a
   - enabled: 1
-    path: "Assets/Scenes/7Ya\u015F_Sahneler/Yemek.unity"
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Yemek_4.unity"
     guid: c997eeba42ef0da4198b7101bc128920
   - enabled: 1
-    path: "Assets/Scenes/7Ya\u015F_Sahneler/Kuaf\xF6reGidi\u015F.unity"
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Kuaf\xF6reGidi\u015F_5.unity"
     guid: 25fb452f5a6e6ea42b1f948d083276c1
   - enabled: 1
-    path: "Assets/Scenes/7Ya\u015F_Sahneler/Kuaf\xF6r.unity"
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Kuaf\xF6r_6.unity"
     guid: 0971ca519630ee34f91734f6c15cd4d2
   - enabled: 1
-    path: "Assets/Scenes/7Ya\u015F_Sahneler/Kuaf\xF6rD\xF6n\xFC\u015F.unity"
-    guid: 3ad78ae4f44971f4e87b7f13602b8edc
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Kuaf\xF6rD\xF6n\xFC\u015F_7.unity"
+    guid: dcd98926c767d4c49be0d23a6faa2c53
+  - enabled: 1
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Piyano_8.unity"
+    guid: b258eb00512b5f946944d173c12c7e5b
+  - enabled: 1
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Piyanodan_Matemati\u011Fe_9.unity"
+    guid: 8033bcbb1b4f1de4eab1b1339e358f6a
+  - enabled: 1
+    path: "Assets/Scenes/7Ya\u015F_Sahneler/Matematik.unity"
+    guid: 9ec64ab81b8246d45887bba05de8c96d
+  - enabled: 1
+    path: "Assets/Scenes/7to14Ya\u015F.unity"
+    guid: 64ddf48a398d8b349be5aab7c0f37589
+  - enabled: 1
+    path: "Assets/Scenes/14Ya\u015F_Sahneler/JigsawPuzzle.unity"
+    guid: 4f439775f169ef14e8ab6c22076bdedd
+  - enabled: 1
+    path: "Assets/Scenes/14Ya\u015F_Sahneler/PuzzleToDolap.unity"
+    guid: 01812a0b2b1b34b4f9cc7ec64670b3ec
   m_configObjects: {}

@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class SahneYönetim_3 : MonoBehaviour
 {
     // Her resim için animatorlerin çekilmesi
-    public Animator resim_1animator;
-    public Animator resim_2animator;
-    public Animator resim_3animator;
+    
+    [SerializeField] Animator resim_1animator;
+    [SerializeField] Animator resim_2animator;
+    [SerializeField] Animator resim_3animator;
 
     // Hangi animasyonun neyden sonra oynayacağının kontrolü için değişkenler
-    public bool f1, f2, f3;
+    [SerializeField] bool f1, f2, f3;
     void Awake()
     {
         //Değişkenlerin başlangıç değerleri
@@ -22,12 +23,13 @@ public class SahneYönetim_3 : MonoBehaviour
     }
     IEnumerator SonGeçme()
     {
+        //Sahne geçişi için delay
         yield return new WaitForSeconds(3f);
 
         SceneManager.LoadScene(4);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
@@ -35,6 +37,7 @@ public class SahneYönetim_3 : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && f1 == true)
         {
             resim_1animator.SetBool("Geçme1", true);
+            Invoke("Anim1",0f);
             f1 = false;
             f2 = true;
 
@@ -44,7 +47,7 @@ public class SahneYönetim_3 : MonoBehaviour
         else if (Input.GetMouseButtonDown(0) && f2 == true)
         {
             resim_2animator.SetBool("Geçme2", true);
-           
+            Invoke("Anim2", 0f);
             f2 = false;
             f3 = true;
 
@@ -57,9 +60,16 @@ public class SahneYönetim_3 : MonoBehaviour
             StartCoroutine(SonGeçme());
 
         }
-
-
-
-
+    }
+    
+    private void Anim1()
+    {
+        //1.resim ile 2.resim arasındaki gerekli olan delay için yazılmış fonk
+        resim_2animator.SetBool("Geçme1", true);
+    }
+    private void Anim2()
+    {
+        //2.resim ile 3.resim arasındaki gerekli olan delay için yazılmış fonk
+        resim_3animator.SetBool("Geçme2", true);
     }
 }

@@ -6,6 +6,7 @@ public class Taşı : MonoBehaviour
 {
     Camera kamera;
     Vector2 baslangic_pozisyon;
+    public float denemesayi2=0;
 
     GameObject[] kutu_dizisi;
     private void OnMouseDrag()
@@ -34,6 +35,7 @@ public class Taşı : MonoBehaviour
                     if (mesafe <= 1)
                     {
                         transform.position= Kutu.transform.position;
+                        denemesayi2 = 1;
                     }
                     else
                     {

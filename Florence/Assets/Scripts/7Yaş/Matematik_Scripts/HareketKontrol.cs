@@ -6,6 +6,7 @@ public class HareketKontrol : MonoBehaviour
 {
     public GameObject objectToDrag;
     public GameObject objectDragToPos;
+    public float denemeSayi = 0;
 
     public float dropDistance;
 
@@ -33,6 +34,7 @@ public class HareketKontrol : MonoBehaviour
         {
             isLocked= true;
             objectToDrag.transform.position= objectDragToPos.transform.position;
+            denemeSayi = denemeSayi + 1;
         }
         else
         {

@@ -177,6 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 192831359}
   objectDragToPos: {fileID: 446621048}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &192831362
@@ -316,6 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 210195840}
   objectDragToPos: {fileID: 1148570902}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &210195843
@@ -455,6 +457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 438654101}
   objectDragToPos: {fileID: 1205958748}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &438654104
@@ -939,6 +942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 888202843}
   objectDragToPos: {fileID: 472912109}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &888202846
@@ -1230,6 +1234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1170869287}
   objectDragToPos: {fileID: 1698885378}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1170869290
@@ -1445,6 +1450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1177710981}
   objectDragToPos: {fileID: 1472482783}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1177710984
@@ -1817,6 +1823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1362779629}
   objectDragToPos: {fileID: 2092804943}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1362779632
@@ -2032,6 +2039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1474031960}
   objectDragToPos: {fileID: 1172609505}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1474031963
@@ -2209,6 +2217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1604134734}
   objectDragToPos: {fileID: 1054316237}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1604134737
@@ -2348,6 +2357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1627998344}
   objectDragToPos: {fileID: 454113181}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1627998347
@@ -2561,6 +2571,8 @@ GameObject:
   - component: {fileID: 1949131730}
   - component: {fileID: 1949131729}
   - component: {fileID: 1949131728}
+  - component: {fileID: 1949131732}
+  - component: {fileID: 1949131731}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2634,6 +2646,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1949131731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949131727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ee0ecdbbef6ed4d8f70dc9f1896b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1969636148}
+  backgroundAnim: {fileID: 1989956220}
+  hareketkontrol1: {fileID: 1604134736}
+  hareketkontrol2: {fileID: 1474031962}
+  hareketkontrol3: {fileID: 1177710983}
+  hareketkontrol4: {fileID: 1627998346}
+  hareketkontrol5: {fileID: 1362779631}
+--- !u!95 &1949131732
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949131727}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b72c369ddbcff264fb4fba22e20bc580, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1969636148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,7 +2703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1969636149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2792,6 +2843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1971026423}
   objectDragToPos: {fileID: 690833518}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1971026426
@@ -2931,6 +2983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1983643269}
   objectDragToPos: {fileID: 2036936634}
+  denemeSayi: 0
   dropDistance: 40
   isLocked: 0
 --- !u!114 &1983643272
@@ -3038,6 +3091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1989956219}
   - component: {fileID: 1989956218}
+  - component: {fileID: 1989956220}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -3105,13 +3159,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989956217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0111, y: 0.04, z: 0}
+  m_LocalPosition: {x: -0.0111, y: -0.04, z: 0}
   m_LocalScale: {x: 0.9278317, y: 0.9278317, z: 0.9278317}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1989956220
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989956217}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1055404ae85679149876a958fd14f325, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2036936634
 GameObject:
   m_ObjectHideFlags: 0

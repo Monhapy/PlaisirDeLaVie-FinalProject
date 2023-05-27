@@ -1018,12 +1018,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "animator_kuaf\xF6r": {fileID: 544812180}
-  "sahneGe\xE7i\u015F": {fileID: 0}
+  "sahneGe\xE7i\u015F": {fileID: 624224337}
   "animator_sa\xE71": {fileID: 102445357}
   "animator_sa\xE72": {fileID: 1178299348}
   z1: 0
   z2: 0
   z3: 0
+  z4: 0
 --- !u!4 &1028627463
 Transform:
   m_ObjectHideFlags: 0
