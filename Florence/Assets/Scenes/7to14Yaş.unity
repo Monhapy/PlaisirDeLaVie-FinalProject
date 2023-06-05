@@ -203,7 +203,6 @@ GameObject:
   - component: {fileID: 1125669207}
   - component: {fileID: 1125669206}
   - component: {fileID: 1125669205}
-  - component: {fileID: 1125669204}
   - component: {fileID: 1125669209}
   m_Layer: 5
   m_Name: Canvas
@@ -212,26 +211,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1125669204
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125669203}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a139c1de6fef4f14fbda90f6a4340f53, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &1125669205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebe839aee0197d469b33a198758f54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yazi: {fileID: 1125669203}
+  yazi: {fileID: 1541633162}
 --- !u!1 &1541633158
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +317,7 @@ GameObject:
   - component: {fileID: 1541633159}
   - component: {fileID: 1541633161}
   - component: {fileID: 1541633160}
+  - component: {fileID: 1541633162}
   m_Layer: 5
   m_Name: "14Ya\u015FYaz\u0131"
   m_TagString: Untagged
@@ -462,6 +442,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541633158}
   m_CullTransparentMesh: 1
+--- !u!95 &1541633162
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541633158}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f258b7c230623d48bf8e53ae6762158, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2138903818
 GameObject:
   m_ObjectHideFlags: 0

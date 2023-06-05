@@ -7,19 +7,20 @@ using UnityEngine.SceneManagement;
 public class Salata : MonoBehaviour
 {
     public GameObject dolusalata, boþsalata, yarýdolusalata,kruvasan;
-    public GameObject background1,background2, background3;
+    public GameObject background1,background2,background3, background4;
     public Animator cameraAnim;
     public void DoluSalata()
     {
         background1.SetActive(false);
+        background2.SetActive(false);
         dolusalata.SetActive(false);
         yarýdolusalata.SetActive(true);
-        background2.SetActive(true);
+        background3.SetActive(true);
     }
     public void YarýSalata()
     {
-        background2.SetActive(false);
-        background3.SetActive(true);
+        background3.SetActive(false);
+        background4.SetActive(true);
         yarýdolusalata.SetActive(false);
         boþsalata.SetActive(true);
     }

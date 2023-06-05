@@ -7,17 +7,21 @@ public class BackgroundAnim : MonoBehaviour
 {
     public Animator animator_kuaför,sahneGeçiþ;
     public Animator animator_saç1, animator_saç2;
-    public bool z1, z2,z3,z4;
+    public bool z1, z2, z3;
+    Butonlar buton;
+    
     private void Start()
     {
          z1= true;
          z2= false;
          z3= false;
-         z4= false;
+         
+        buton = FindObjectOfType<Butonlar>();
     }
 
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0) && z1==true)
         {
            
@@ -39,16 +43,17 @@ public class BackgroundAnim : MonoBehaviour
         {
             
             z3 = false;
-            z4 =true;
+            
 
         }
-        else if (Input.GetMouseButtonDown(0) && z4 == true)
+        else if (Input.GetMouseButtonDown(0) && buton.cam == true)
         {
             sahneGeçiþ.SetBool("Sahne", true);
             Invoke("SahneGeçiþ", 1.5f);
 
 
         }
+
 
     }
     private void SahneGeçiþ()

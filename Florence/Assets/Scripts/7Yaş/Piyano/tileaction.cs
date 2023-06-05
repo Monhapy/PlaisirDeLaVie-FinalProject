@@ -21,7 +21,7 @@ public class tileaction : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            color.color = Color.yellow;
+            color.color = new Color(234f/255f,214/255f,177/255f);
                
             FindObjectOfType<score>().Scoreupdate(scorevalue);
         }

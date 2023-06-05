@@ -47,4 +47,28 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/14Ya\u015F_Sahneler/PuzzleToDolap.unity"
     guid: 01812a0b2b1b34b4f9cc7ec64670b3ec
+  - enabled: 1
+    path: "Assets/Scenes/14Ya\u015F_Sahneler/DolapSahnesi.unity"
+    guid: 64b1229fa0f4ae54583be0577590773b
+  - enabled: 1
+    path: "Assets/Scenes/14Ya\u015F_Sahneler/DolapToResimSilme.unity"
+    guid: 9e961cf50029c4d4da9bdbe9601b6533
+  - enabled: 1
+    path: "Assets/Scenes/14Ya\u015F_Sahneler/ResimSilme.unity"
+    guid: e709af928f17ba748804cb00d91701e7
+  - enabled: 1
+    path: "Assets/Scenes/14to19Ya\u015F.unity"
+    guid: ea7491ad42801254ca4ad59d117caacd
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/19Ya\u015F_Giri\u015F.unity"
+    guid: ed245e60b35533d49b6059bc842b7d6f
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/KalemD\xFC\u015F\xFCrme.unity"
+    guid: 2fe9deadbf27ce340917a1769a744a77
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/OdaBulmaca.unity"
+    guid: 1b47da8eac90a9941b8ddda86c35eddc
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/Ma\u011FazaGidi\u015F.unity"
+    guid: 8f33688535b9d184fb459c1c4d399d09
   m_configObjects: {}

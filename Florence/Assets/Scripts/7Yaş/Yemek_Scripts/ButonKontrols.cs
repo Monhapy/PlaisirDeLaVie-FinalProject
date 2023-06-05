@@ -13,6 +13,7 @@ public class ButonKontrols : MonoBehaviour
 
         kruvasan_animator.SetBool("kruvasan", true);
         background.SetActive(false);
+        background2.SetActive(true);
         
     }
 

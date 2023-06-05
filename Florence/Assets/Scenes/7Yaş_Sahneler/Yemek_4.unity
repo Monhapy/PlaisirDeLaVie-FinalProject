@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 2
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -463,7 +463,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 1
+  - eventID: 3
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -649,7 +649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1321126084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1354,9 +1354,10 @@ MonoBehaviour:
   "bo\u015Fsalata": {fileID: 1503609877}
   "yar\u0131dolusalata": {fileID: 2087449315}
   kruvasan: {fileID: 1283694563}
-  background1: {fileID: 1321126083}
-  background2: {fileID: 1439293005}
-  background3: {fileID: 818611217}
+  background1: {fileID: 1039773667}
+  background2: {fileID: 1321126083}
+  background3: {fileID: 1439293005}
+  background4: {fileID: 818611217}
   cameraAnim: {fileID: 1645199825}
 --- !u!1 &2004697629
 GameObject:

@@ -28,9 +28,10 @@ public class Diş : MonoBehaviour
                 buton.SetActive(true);
                 butonEtkinleştirildi = true;
             }
-            
+
         }
         
     }
     
+
 }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class YediToOnDört : MonoBehaviour
 {
-    [SerializeField] GameObject yazi;
+    [SerializeField] Animator yazi;
 
     private void Start()
     {
@@ -17,9 +17,9 @@ public class YediToOnDört : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            yazi.SetBool("OnDört", true);
             
-            
-            Invoke("Gidiş", 1.5f);
+            Invoke("Gidiş", 3f);
         }
     }
     void Gidiş()
