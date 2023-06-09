@@ -14,6 +14,9 @@ public class Silme : MonoBehaviour
     [SerializeField] bool pressed;
     [SerializeField] bool z1;
 
+    public GameObject cam;
+    private float camPositionY;
+
     private void Awake()
     {
         z1 = true;
@@ -23,12 +26,14 @@ public class Silme : MonoBehaviour
     {
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = 0;
+        camPositionY=cam.transform.position.y;
 
-        if (Input.GetMouseButtonDown(0) && z1 == true)
+        if (Input.GetMouseButtonDown(0) && z1 == true )
         {
-            buton.SetActive(true);
-            
+           buton.SetActive(true);
+              
         }
+
         if (Input.GetMouseButtonDown(0))
         {
             pressed = true;

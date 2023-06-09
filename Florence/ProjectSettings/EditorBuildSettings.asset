@@ -70,5 +70,20 @@ EditorBuildSettings:
     guid: 1b47da8eac90a9941b8ddda86c35eddc
   - enabled: 1
     path: "Assets/Scenes/19Ya\u015F_Sahneler/Ma\u011FazaGidi\u015F.unity"
-    guid: 8f33688535b9d184fb459c1c4d399d09
+    guid: 68848262f56ff8c4ba4744e09c5fcaea
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/EveGeli\u015FPiyano.unity"
+    guid: 060cb78c04ad45d4783119cd9136c968
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/Piyano.unity"
+    guid: 985ae210ab507574a816b70540c3f587
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/OkulveTanisma.unity"
+    guid: 28057e4d3f1a4c242b1705f47e999ac8
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/Fl\xF6rt.unity"
+    guid: 8d5aeda43b98540489f34766cd6d4979
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/ResimSilmeHayal.unity"
+    guid: f695aa75983185944acf77e60d8ccc84
   m_configObjects: {}

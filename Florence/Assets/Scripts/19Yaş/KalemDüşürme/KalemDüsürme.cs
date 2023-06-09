@@ -8,7 +8,7 @@ public class KalemDüsürme : MonoBehaviour
 {
     [SerializeField] private Animator resim1, resim2, resim3,camAnims, buton;
     public bool p1,p2, p3;
-    public GameObject butons;
+
     private void Start()
     {
         p1 = true;
@@ -28,7 +28,7 @@ public class KalemDüsürme : MonoBehaviour
         {
             resim3.SetBool("Geliş3", true);
            
-            Invoke("ButonAkitflik", 2f);
+           
             p2 = false;
             p3= true;
 
@@ -36,8 +36,11 @@ public class KalemDüsürme : MonoBehaviour
         else if (Input.GetMouseButtonDown(0) && p3 == true)
         {
             camAnims.SetBool("CamMove", true);
-            
+            Invoke("SahneDelay", 2f);
         }
     }
-    
+    private void SahneDelay()
+    {
+        SceneManager.LoadScene(20);
+    }
 }
