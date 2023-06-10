@@ -3,37 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EveGelisPiyano : MonoBehaviour
+public class PiyanoOkulGidiÅŸ : MonoBehaviour
 {
     [SerializeField] private Animator resim2, camAnims;
     public bool p1, p2;
-    
+
     private void Start()
     {
         p1 = true;
         p2 = false;
-        
+
     }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) && p1 == true)
         {
-            resim2.SetBool("Geliþ3", true);
+            resim2.SetBool("GeliÅŸ3", true);
             p1 = false;
             p2 = true;
         }
-        
-        else if (Input.GetMouseButtonDown(0) && p2== true)
+
+        else if (Input.GetMouseButtonDown(0) && p2 == true)
         {
             camAnims.SetBool("CamMove", true);
-            Invoke("SahneGidiþ", 2f);
+            Invoke("Kararma", 2f);
+            Invoke("SahneGidiÅŸ", 4.2f);
+            
 
 
         }
     }
-    private void SahneGidiþ()
+    private void SahneGidiÅŸ()
     {
-        SceneManager.LoadScene(23);
+        SceneManager.LoadScene(30);
+    }
+    private void Kararma()
+    {
+        camAnims.SetBool("Kararma", true);
     }
 }

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EveGelisPiyano : MonoBehaviour
+public class KararOkul : MonoBehaviour
 {
     [SerializeField] private Animator resim2, camAnims;
     public bool p1, p2;
-    
+
     private void Start()
     {
         p1 = true;
         p2 = false;
-        
+
     }
 
     private void Update()
@@ -23,8 +23,8 @@ public class EveGelisPiyano : MonoBehaviour
             p1 = false;
             p2 = true;
         }
-        
-        else if (Input.GetMouseButtonDown(0) && p2== true)
+
+        else if (Input.GetMouseButtonDown(0) && p2 == true)
         {
             camAnims.SetBool("CamMove", true);
             Invoke("SahneGidiþ", 2f);
@@ -34,6 +34,6 @@ public class EveGelisPiyano : MonoBehaviour
     }
     private void SahneGidiþ()
     {
-        SceneManager.LoadScene(23);
+        SceneManager.LoadScene(29);
     }
 }

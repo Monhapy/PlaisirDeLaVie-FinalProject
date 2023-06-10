@@ -26,7 +26,7 @@ public class Silme : MonoBehaviour
     {
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = 0;
-        camPositionY=cam.transform.position.y;
+        
 
         if (Input.GetMouseButtonDown(0) && z1 == true )
         {
