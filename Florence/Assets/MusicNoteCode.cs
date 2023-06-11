@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicNoteCode : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class MusicNoteCode : MonoBehaviour
     public void A_Note_Play()
     {
         A_Note.Play();
+        Invoke("SahneGeçiþ", 2f);
+
     }
     public void B_Note_Play()
     {
@@ -30,6 +33,10 @@ public class MusicNoteCode : MonoBehaviour
     public void E_Note_Play()
     {
         E_Note.Play();
+    }
+    private void SahneGeçiþ()
+    {
+        SceneManager.LoadScene(24);
     }
 
 }
