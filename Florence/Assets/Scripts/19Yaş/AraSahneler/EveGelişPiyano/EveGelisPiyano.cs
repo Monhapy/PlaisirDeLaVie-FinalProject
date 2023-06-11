@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EveGelisPiyano : MonoBehaviour
 {
@@ -26,7 +27,13 @@ public class EveGelisPiyano : MonoBehaviour
         else if (Input.GetMouseButtonDown(0) && p2== true)
         {
             camAnims.SetBool("CamMove", true);
+            Invoke("SahneGidiþ", 2f);
+
 
         }
+    }
+    private void SahneGidiþ()
+    {
+        SceneManager.LoadScene(23);
     }
 }

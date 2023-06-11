@@ -86,4 +86,16 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/19Ya\u015F_Sahneler/ResimSilmeHayal.unity"
     guid: f695aa75983185944acf77e60d8ccc84
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/HayalBaloncuk.unity"
+    guid: c3c5f9bb82fd1554fa1a3c87d9985d9a
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/KararOkul.unity"
+    guid: ee012901ff60fb54787c3643ae3af42c
+  - enabled: 1
+    path: "Assets/Scenes/19Ya\u015F_Sahneler/PiyanoOkulGidi\u015F.unity"
+    guid: 2ff8656bab3f5454eb6418a1d8d3b398
+  - enabled: 1
+    path: Assets/Scenes/Son.unity
+    guid: dcddbff06bfb278469b1584770aa9840
   m_configObjects: {}
