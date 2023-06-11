@@ -17,7 +17,7 @@ public class score : MonoBehaviour
     }
     private void Update()
     {
-        if(scorepoints==10) 
+        if(scorepoints==20) 
         {
             Destroy(yokEdilen);
             Invoke("CamMoveDelay", 2f);
