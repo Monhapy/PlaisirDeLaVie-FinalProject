@@ -7,6 +7,7 @@ public class SilmeHayal : MonoBehaviour
 {
     [SerializeField] GameObject mask;
     [SerializeField] GameObject buton, background;
+    public GameObject kontrol;
 
     public Animator backgroundAnim, backgroundAnim2;
 
@@ -46,16 +47,9 @@ public class SilmeHayal : MonoBehaviour
             
             GameObject ob = Instantiate(mask, pos, Quaternion.identity);
             ob.transform.parent = GameObject.Find("scratch").transform;
-
-
+            
         }
-
-
-
-
-
-
-
+        
     }
 
     private void Start()

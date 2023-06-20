@@ -872,6 +872,7 @@ MonoBehaviour:
   mask: {fileID: 6613582502430708717, guid: f99af4a99f8857a45ba4c4f45261dc42, type: 3}
   buton: {fileID: 1819523915}
   background: {fileID: 928686205}
+  kontrol: {fileID: 1822347042}
   backgroundAnim: {fileID: 1816144493}
   backgroundAnim2: {fileID: 928686208}
   pressed: 0

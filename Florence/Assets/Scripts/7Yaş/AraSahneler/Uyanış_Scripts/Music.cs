@@ -4,16 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Music : MonoBehaviour
 {
-    void Awake()
+    void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
-        if (SceneManager.GetActiveScene().name == "7to14Yaþ")
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "7to14Yaþ")
         {
-            Destroy(GameObject.FindWithTag("Music"));
+            Destroy(gameObject);
         }
-
-
     }
 
 
